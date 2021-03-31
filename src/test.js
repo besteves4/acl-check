@@ -13,6 +13,9 @@ let dirAclDoc = $rdf.sym('https://alice.example.com/stuff/')
 let agent = $rdf.sym('https://beatrizesteves.solidcommunity.net/profile/card#me')
 let modesRequired = [ ACL('Read'), ACL('Write'), ACL('Control') ]
 
+let origin = null
+let trustedOrigins = null
+
 //await fetcher.load(aclDoc) // Load the ACL documents into kb
 fetcher.load(aclDoc)
 
